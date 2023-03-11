@@ -1,0 +1,76 @@
+@use '@angular/material' as mat;
+@import './variables';
+
+@include mat.core();
+
+$bluesky-primary: mat.define-palette($bright-navy-blue-palette, 900, 300, 700);
+$bluesky-accent: mat.define-palette($bright-navy-blue-palette, 300, 100, 500);
+$bluesky-warn: mat.define-palette($bright-navy-blue-palette, 400);
+
+$alarm-typography: mat.define-typography-config(
+    $font-family: 'Open Sans',
+);
+
+$bluesky-theme: mat.define-light-theme((
+  color: (
+    primary: $bluesky-primary,
+    accent: $bluesky-accent,
+    warn: $bluesky-warn
+  ),
+  typography: $alarm-typography,
+));
+
+@include mat.all-component-themes($bluesky-theme);
+
+.mat-flat-button {
+    border-radius: 36px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick,
+.mat-form-field-appearance-outline .mat-form-field-outline,
+.mat-form-field-label {
+    color: $color0367A6;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick,
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: $color72C1F2;
+}
+
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon,
+.mat-input-element,
+.mat-select-value-text,
+.mat-select-arrow {
+    color: $color021859 !important;
+}
+
+.mat-checkbox-frame {
+    border-color: #666666;
+    border-width: 1px !important;
+}
+
+div.ngx-mat-timepicker-dialog>mat-dialog-container.mat-dialog-container .mat-dialog-content mat-toolbar.timepicker-header {
+    justify-content: flex-end !important;
+}
+
+div.ngx-mat-timepicker-dialog>mat-dialog-container.mat-dialog-container div[mat-dialog-actions] {
+    justify-content: space-between !important;
+}
+
+div.ngx-mat-timepicker-dialog>mat-dialog-container.mat-dialog-container div[mat-dialog-actions] .mat-button.mat-primary {
+    background-color: $color0367A6;
+    color: $colorF0F0F2;
+    border-radius: 36px;
+}
+
+th.mat-header-cell {
+    color: $color021859;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.mat-cell {
+    color: rgba(69, 69, 70, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -1,0 +1,36 @@
+$colore3f2fd: #e3f2fd;
+$colorbadffb: #badffb;
+$color8fcbfa: #8fcbfa;
+$color72C1F2: #72C1F2;
+$color13C9F2: #13C9F2;
+$color0367A6: #0367A6;
+$color3ca7f6: #3ca7f6;
+$color0c98f5: #0c98f5;
+$color062540: #062540;
+$color021859: #021859;
+$colorF0F0F2: #F0F0F2;
+
+$bright-navy-blue-palette: (
+  50: $colore3f2fd,
+  100: $colorbadffb,
+  200: $color8fcbfa,
+  300: $color72C1F2,
+  400: $color13C9F2,
+  500: $color0367A6,
+  600: $color3ca7f6,
+  700: $color0c98f5,
+  800: $color062540,
+  900: $color021859,
+  contrast: (
+    50: $colorF0F0F2,
+    100: $colorF0F0F2,
+    200: $colorF0F0F2,
+    300: $colorF0F0F2,
+    400: $colorF0F0F2,
+    500: $colorF0F0F2,
+    600: $colorF0F0F2,
+    700: $colorF0F0F2,
+    800: $colorF0F0F2,
+    900: $colorF0F0F2,
+  )
+);

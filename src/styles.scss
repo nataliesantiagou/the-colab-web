@@ -1,4 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import './assets/scss/custom_theme.scss';
+
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Open Sans', "Helvetica Neue", sans-serif; }
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: $color021859;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color021859;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: $color021859;
+}
+
+a {
+    text-decoration: none;
+}
