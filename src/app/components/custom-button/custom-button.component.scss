@@ -1,0 +1,23 @@
+@import '../../../assets/scss/variables';
+
+.mat-flat-button {
+    &.btn-cancel {
+        background-color: $color062540;
+        color: $colorF0F0F2;
+    }
+    
+    &:hover {
+        background-color: $color0367A6;    
+    }
+}
+
+.mat-flat-button {
+    &.btn-save {
+        background-color: $color0367A6;
+        color: $colorF0F0F2;
+
+        &:hover {
+            background-color: $color062540;
+        }
+    }
+}

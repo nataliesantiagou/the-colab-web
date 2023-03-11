@@ -1,0 +1,9 @@
+.example-full-width {
+    width: 100%;
+}
+
+:ng-deep {
+    .option--hide {
+        display: none;
+    }
+}

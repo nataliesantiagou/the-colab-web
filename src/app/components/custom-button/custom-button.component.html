@@ -1,0 +1,5 @@
+<button 
+    [class]="'btn-' + ((color != 'primary' || color != 'accent') || color != 'warn' ? color : '')"
+    mat-flat-button 
+    [color]="color"
+    (click)="clickButton()">{{inputButton}}</button>

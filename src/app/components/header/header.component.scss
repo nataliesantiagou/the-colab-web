@@ -1,0 +1,41 @@
+@import '../../../assets/scss/variables';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 3%;
+    border-bottom: 1px solid #CAC4D0;
+
+    &-home {
+        font-size: 16px;
+        font-weight: 600;
+        color: $color021859;
+    }
+
+    &-options {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+
+        a {
+            font-size: 14px;
+            font-weight: 700;
+            color: $color0367A6;
+            &:hover {
+                color: $color021859;
+            }
+        }
+
+        .active {
+            a {
+                color: $color021859;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,19 @@
+<mat-form-field *ngIf="!isHour" class="example-full-width" appearance="outline">
+    <mat-label>{{inputLabel}}</mat-label>
+    <input 
+        matInput 
+        [(ngModel)]="inputText" 
+        [value]="inputText"
+        (ngModelChange)="changeText($event)">
+</mat-form-field>
+
+<mat-form-field *ngIf="isHour" class="example-full-width" appearance="outline">
+    <input matInput
+            [(ngModel)]="inputText" 
+            [value]="inputText"
+            (ngModelChange)="changeText($event)"
+            [ngxMatTimepicker]="pickerA"
+            [placeholder]="inputText"
+            readonly />
+</mat-form-field>
+<ngx-mat-timepicker #pickerA></ngx-mat-timepicker>
