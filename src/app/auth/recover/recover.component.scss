@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+
+.login {
+
+    &.backgroud-auth {
+        background-image: url('../../../assets/images/background.png');
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-content {
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 8%;
+
+        &-email {
+            margin-top: 60%;
+        }
+
+        &-btn {
+            margin-top: 40%;
+        }
+
+    }
+}
+

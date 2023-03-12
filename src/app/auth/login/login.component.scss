@@ -1,0 +1,47 @@
+@import '../../../assets/scss/variables';
+
+.login {
+
+    &.backgroud-auth {
+        background-image: url('../../../assets/images/background.png');
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-content {
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 8%;
+
+        &-img {
+            margin: 15% 0;
+
+            img {
+                width: 140px;
+                height: auto;
+            }
+        }
+
+        &-btn {
+            margin-top: 10%;
+        }
+
+        &-text {
+            margin: 8% 0;
+            font-size: 14px;
+            font-weight: 400;
+            color: $color062540;
+        }
+
+        &-recover {
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                color: $color062540;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
