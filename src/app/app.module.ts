@@ -32,7 +32,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     AlarmDetailDialogModule,
     SuppliesModule,
     ListPatientsModule,
-    MatTooltipModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

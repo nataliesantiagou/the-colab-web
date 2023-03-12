@@ -1,0 +1,50 @@
+<div class="login backgroud-auth">
+
+    <div class="login-content">
+        <h1>THE COLAB</h1>
+    
+        <div class="login-content-img">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+
+        <div class="login-content-name">
+            <app-custom-input
+                [inputText]="''"
+                [inputLabel]="'Nombre de usuario'"
+                (valueChange)="valueChange($event)">
+            </app-custom-input>
+        </div>
+
+        <div class="login-content-password">
+            <app-custom-input-password
+                [inputText]="''"
+                [inputLabel]="'Contraseña'"
+                (valueChange)="valueChangePassword($event)">
+            </app-custom-input-password>
+        </div>
+
+        <div class="login-content-btn">
+            <app-custom-button
+                [inputButton]="'Iniciar sesión'"
+                [color]="'primary'"
+                (valueClick)="clickButton()">
+            </app-custom-button>
+        </div>
+
+        <p class="login-content-text">O</p>
+
+        <div class="login-content-btn-account">
+            <app-custom-button
+                [inputButton]="'Crear cuenta'"
+                [color]="'primary'"
+                (valueClick)="clickButtonAccount()">
+            </app-custom-button>
+        </div>
+
+        <p class="login-content-recover">
+            <a href="/recuperar-cuenta">Recuperar contraseña</a>
+        </p>
+        
+    </div>
+
+</div>

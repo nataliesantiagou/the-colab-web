@@ -1,0 +1,24 @@
+<div class="login backgroud-auth">
+
+    <div class="login-content">
+        <h1>THE COLAB</h1>
+
+        <div class="login-content-email">
+            <app-custom-input
+                [inputText]="''"
+                [inputLabel]="'Correo electrónico'"
+                (valueChange)="valueChange($event)">
+            </app-custom-input>
+        </div>
+
+        <div class="login-content-btn">
+            <app-custom-button
+                [inputButton]="'Recuperar contraseña'"
+                [color]="'primary'"
+                (valueClick)="clickButton()">
+            </app-custom-button>
+        </div>
+        
+    </div>
+
+</div>
