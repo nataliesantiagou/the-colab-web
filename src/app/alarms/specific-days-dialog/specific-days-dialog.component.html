@@ -1,0 +1,28 @@
+<div class="days-alarm">
+
+    <h3>Detalle recordatorio</h3>
+
+    <mat-icon 
+        matSuffix
+        (click)="closeModal()">
+        close
+    </mat-icon>
+
+    <div class="content">
+        <div 
+            class="days"
+            *ngFor="let item of days">
+            <p>{{item.value}}</p>
+            <mat-checkbox class="example-margin" [(ngModel)]="item.checked" color="primary"></mat-checkbox>
+        </div>
+
+        <div class="btn-save">
+            <app-custom-button
+                [inputButton]="'Listo'"
+                [color]="'primary'"
+                (valueClick)="clickButton()">
+            </app-custom-button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+<div class="frecuency-alarm">
+
+    <h3>Detalle recordatorio</h3>
+
+    <mat-icon 
+        matSuffix
+        (click)="closeModal()">
+        close
+    </mat-icon>
+
+    <div class="content">
+        <div class="content-frecuency">
+            <app-custom-select
+                [selectLabel]="'Número'"
+                [selectedValue]="''"
+                [options]="numbers">
+            </app-custom-select>
+        </div>
+
+        <div class="content-frecuency">
+            <app-custom-select
+                [selectLabel]="'Frecuencia'"
+                [selectedValue]="''"
+                [options]="frecuencies">
+            </app-custom-select>
+        </div>
+    </div>
+
+    <div class="btn-save">
+        <app-custom-button
+            [inputButton]="'Listo'"
+            [color]="'primary'"
+            (valueClick)="clickButton()">
+        </app-custom-button>
+    </div>
+
+</div> 

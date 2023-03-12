@@ -1,11 +1,20 @@
-<mat-form-field *ngIf="!isHour" class="example-full-width" appearance="outline">
-    <mat-label>{{inputLabel}}</mat-label>
-    <input 
-        matInput 
-        [(ngModel)]="inputText" 
-        [value]="inputText"
-        (ngModelChange)="changeText($event)">
-</mat-form-field>
+<div class="custom-input">
+    <mat-form-field *ngIf="!isHour" class="example-full-width" appearance="outline">
+        <mat-label>{{inputLabel}}</mat-label>
+        <input 
+            matInput 
+            [(ngModel)]="inputText" 
+            [value]="inputText"
+            (ngModelChange)="changeText($event)">
+    </mat-form-field>
+
+    <span *ngIf="isMedicine">
+        <mat-icon matTooltip="Puedes ingresar más de un medicamento separado por coma"
+        matTooltipPosition="right"
+        matTooltipClass="tooltipStyle">help</mat-icon>
+    </span>
+
+</div>
 
 <mat-form-field *ngIf="isHour" class="example-full-width" appearance="outline">
     <input matInput

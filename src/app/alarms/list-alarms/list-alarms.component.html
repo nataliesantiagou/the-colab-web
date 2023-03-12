@@ -1,0 +1,25 @@
+<div class="list-alarms">
+
+    <h2>Recordatorios</h2>
+
+    <div class="wrapper">
+        <div *ngFor="let alarm of alarmsList" class="alarm-card">
+            <div class="alarm-card-img" [ngStyle]="{'background-image': 'url(' + alarm.photo + ')'}">
+            </div>
+
+            <div class="alarm-card-content">
+                <p class="title-card">{{alarm.patient}}</p>
+                <p class="medicine-card">{{alarm.medicine}}</p>
+                <p class="hour-card">{{alarm.hour}}</p>
+
+                <div class="btn-detail">
+                    <app-custom-button
+                        [inputButton]="'Ver detalle'"
+                        [color]="'primary'"
+                        (valueClick)="clickButton(alarm)">
+                    </app-custom-button>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>

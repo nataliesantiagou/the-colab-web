@@ -3,3 +3,14 @@
 .example-full-width {
     width: 100%;
 }
+
+.custom-input {
+    position: relative;
+
+    span {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        color: $color13C9F2;
+    }
+}

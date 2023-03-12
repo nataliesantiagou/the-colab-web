@@ -1,0 +1,92 @@
+<div class="alarm-edit">
+
+    <div class="alarm-edit-content">
+        <h2>Editar recordatorio</h2>
+
+        <div class="alarm-edit-row">
+            <p>Nombre del paciente: </p>
+            <div class="alarm-edit-field">
+                <app-custom-select
+                    [selectLabel]="''"
+                    [selectedValue]="listPatients[0].value"
+                    [options]="listPatients">
+                </app-custom-select>
+            </div>
+        </div>
+
+        <div class="alarm-edit-row">
+            <p>Nombre del medicamento: </p>
+            <div class="alarm-edit-field">
+                <app-custom-input
+                    [inputText]="dataAlarm.medicine"
+                    [inputLabel]="''"
+                    [isMedicine]="true">
+                </app-custom-input>
+            </div>
+        </div>
+
+        <div class="alarm-edit-row alarm-edit-row--photo">
+            <p>Foto:</p>
+
+            <div class="container-photo">
+                <div
+                    class="photo" 
+                    [ngStyle]="{'background-image': 'url(' + dataAlarm.photo + ')'}">
+                </div>
+
+                <app-custom-button
+                    [inputButton]="'Subir foto'"
+                    [color]="'primary'">
+                </app-custom-button>
+            </div>
+        </div>
+
+        <div class="alarm-edit-row">
+            <p>Frecuencia:</p>
+            <div class="alarm-edit-field">
+                <app-custom-select
+                    [selectLabel]="''"
+                    [selectedValue]="listFrecuencies[0].value"
+                    [options]="listFrecuencies"
+                    (optionSelected)="change($event)">
+                </app-custom-select>
+            </div>
+        </div>
+
+        <div class="alarm-edit-row">
+            <p>Hora:</p>
+            <div class="alarm-edit-field">
+                <app-custom-input
+                    [inputText]="dataAlarm.hour"
+                    [inputLabel]="''"
+                    [isHour]="true">
+                </app-custom-input>
+            </div>
+        </div>
+
+        <div class="alarm-edit-row">
+            <p>Número de contacto:</p>
+            <div class="alarm-edit-field">
+                <app-custom-input
+                    [inputText]="dataAlarm.contact"
+                    [inputLabel]="''">
+                </app-custom-input>
+            </div>
+        </div>
+
+        <div class="container-btn">
+            <app-custom-button
+                [inputButton]="'Cancelar'"
+                [color]="'cancel'"
+                (valueClick)="clickButton()">
+            </app-custom-button>
+
+            <app-custom-button
+                [inputButton]="'Guardar'"
+                [color]="'save'"
+                (valueClick)="clickButtonSave()">
+            </app-custom-button>
+        </div>
+    </div>
+    
+</div>

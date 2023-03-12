@@ -1,0 +1,62 @@
+@import '../../../assets/scss/variables';
+
+.list-alarms {
+    padding: 3%;
+
+    h2 {
+        text-align: center;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5em;
+        row-gap: 3em;
+
+        .alarm-card {
+            display: flex;
+            height: 160px;
+            border-radius: 20px;
+            border: 1px solid $color0367A6;
+
+            &-img {
+                width: 40%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 20px 0 0 20px;
+            }
+
+            &-content {
+                width: 60%;
+                padding: 15px;
+
+                p {
+                    margin: 0;
+                    color: #000000;
+                }
+
+                .title-card {
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+
+                .medicine-card {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                .hour-card {
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+
+                .btn-detail {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

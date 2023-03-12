@@ -5,6 +5,8 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import {NgxMatTimepickerModule} from 'ngx-mat-timepicker';
 import { CommonModule } from '@angular/common';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     FormsModule,
     NgxMatTimepickerModule,
-    CommonModule
+    CommonModule,
+    MatTooltipModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [CustomInputComponent],

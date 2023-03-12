@@ -1,0 +1,37 @@
+<div class="detail-alarm">
+
+    <h3>Detalle recordatorio</h3>
+
+    <mat-icon 
+        matSuffix
+        (click)="closeModal()">
+        close
+    </mat-icon>
+
+    <div class="content">
+        <p><strong>Nombre del paciente: </strong>{{dataAlarm.patient}}</p>
+        <p><strong>Nombre del medicamento: </strong>{{dataAlarm.medicine}}</p>
+    
+        <div class="alarm-photo">
+            <p><strong>Foto: </strong></p>
+            <div
+                class="photo" 
+                [ngStyle]="{'background-image': 'url(' + dataAlarm.photo + ')'}">
+                
+            </div>
+        </div>
+    
+        <p><strong>Frecuencia: </strong>{{dataAlarm.frecuency}}</p>
+        <p><strong>Hora: </strong>{{dataAlarm.hour}}</p>
+        <p><strong>Número de contacto: </strong>{{dataAlarm.contact}}</p>
+
+        <div class="btn-edit">
+            <app-custom-button
+                [inputButton]="'Editar'"
+                [color]="'primary'"
+                (valueClick)="clickButton(dataAlarm)">
+            </app-custom-button>
+        </div>
+    </div>
+
+</div>
