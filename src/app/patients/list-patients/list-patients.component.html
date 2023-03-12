@@ -1,0 +1,19 @@
+<div class="list-patients">
+
+    <h2>Lista de pacientes</h2>
+
+    <div class="wrapper">
+        <div *ngFor="let patient of listPatients" class="patient-card">
+            <p class="title-card">{{patient.value}}</p>
+            <p class="illenes-card">{{patient.illenes}}</p>
+        </div>
+    </div>
+
+    <div class="btn-create">
+        <mat-icon 
+        matSuffix
+        (click)="createPatient()">
+        add
+    </mat-icon>
+    </div>
+</div>

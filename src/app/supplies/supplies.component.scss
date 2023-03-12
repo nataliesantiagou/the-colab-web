@@ -1,0 +1,46 @@
+@import '../../assets/scss/variables';
+
+.list-alarms {
+    padding: 3%;
+
+    h2 {
+        text-align: center;
+    }
+
+    .wrapper {
+        .container-filter {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+                font-weight: 400;
+                color: #000000;
+            }
+
+            .filter {
+                display: flex;
+                align-items: center;
+                width: 3%;
+                justify-content: space-between;
+                margin-left: 3%;
+            }
+        }
+
+        .container-table {
+            table {
+                width: 100%;
+            }
+
+            .no-data {
+                padding: 20% 0;
+                text-align: center;
+                font-size: 22px;
+                font-weight: 700;
+                color: $color021859;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../../assets/scss/variables';
+
+.list-patients {
+    padding: 3%;
+
+    h2 {
+        text-align: center;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5em;
+        row-gap: 3em;
+        margin-top: 3%;
+
+        .patient-card {
+            border: 1px solid $color021859;
+            padding: 20px 30px;
+            font-size: 14px;
+            color: $color021859;
+
+            .title-card {
+                font-weight: 700;
+                margin: 0 0 10px 0;
+            }
+
+            .illenes-card {
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+    }
+
+    .btn-create {
+        position: absolute;
+        right: 3%;
+        bottom: 3%;
+        width: 56px;
+        height: 56px;
+        background-color: #13C9F2;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $colorF0F0F2;
+
+        &:hover {
+            background-color: $color0367A6;
+        }
+    }
+}

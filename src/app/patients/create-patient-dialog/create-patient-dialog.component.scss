@@ -1,0 +1,51 @@
+@import '../../../assets/scss/variables';
+
+::ng-deep{
+    .modal-create-patient {
+        position: relative !important;
+    }
+}
+
+.create-patient {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    h3 {
+        text-align: center;
+    }
+
+    .mat-icon {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .content {
+        margin-top: 40px;
+        
+        .patient-row {
+            display: flex;
+            align-items: flex-start;
+
+            p {
+                width: 45%;
+                font-size: 14px;
+                font-weight: 700;
+                color: $color021859;
+            }
+
+            .patient-field {
+                width: 55%;
+            }
+        }
+
+        .container-btn {
+            width: 50%;
+            margin: 4% auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+<div class="create-patient">
+
+    <h3>Crear paciente</h3>
+
+    <mat-icon 
+        matSuffix
+        (click)="closeModal()">
+        close
+    </mat-icon>
+
+    <div class="content">
+        <div class="patient-row">
+            <p>Nombre del paciente: </p>
+            <div class="patient-field">
+                <app-custom-input
+                    [inputText]="''"
+                    [inputLabel]="''"
+                    (valueChange)="changeName($event)">
+                </app-custom-input>
+            </div>
+        </div>
+
+        <div class="patient-row">
+            <p>Enfermedad: </p>
+            <div class="patient-field">
+                <app-custom-input
+                    [inputText]="''"
+                    [inputLabel]="''"
+                    (valueChange)="changeIllenes($event)">
+                </app-custom-input>
+            </div>
+        </div>
+
+        <div class="container-btn">
+            <app-custom-button
+                [inputButton]="'Cancelar'"
+                [color]="'cancel'"
+                (click)="cancelCreate()">
+            </app-custom-button>
+    
+            <app-custom-button
+                [inputButton]="'Guardar'"
+                [color]="'save'"
+                (click)="createPatient()">
+            </app-custom-button>
+        </div>
+    </div>
+
+</div> 
