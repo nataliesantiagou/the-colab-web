@@ -9,7 +9,7 @@
     </mat-form-field>
 
     <span *ngIf="isMedicine">
-        <mat-icon matTooltip="Puedes ingresar más de un medicamento separado por coma"
+        <mat-icon [matTooltip]="isMedicine ? 'Puedes ingresar más de un medicamento separado por coma' : 'Puedes ingresar más de una enfermedad separadas por coma'"
         matTooltipPosition="right"
         matTooltipClass="tooltipStyle">help</mat-icon>
     </span>
